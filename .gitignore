@@ -1,0 +1,30 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Segredos do Streamlit (nunca versionar)
+.streamlit/secrets.toml
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dados
+# raw: dado bruto, não vai para o Git (só o .gitkeep)
+# clean: dado tratado, VERSIONADO de propósito: o app no Streamlit Cloud só lê o que está no GitHub
+data/raw/*
+!data/raw/.gitkeep
+
+# Skills do Streamlit (symlinks para o venv; cada pessoa roda `streamlit skills`)
+.claude/skills/
+.agents/skills/
